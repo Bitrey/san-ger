@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Hello Bulma!</title>
+
+        <!-- Leaflet -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        />
+
+        <!-- Bulma -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
+        />
+
+        <!-- Website CSS -->
+        <link rel="stylesheet" href="/css/homepage.css" />
+    </head>
+    <body>
+        <section class="section">
+            <div class="container">
+                <h1 class="title">Hello World</h1>
+                <p class="subtitle">
+                    My first website with <strong>Bulma</strong>!
+                </p>
+
+                <a class="button is-primary" onclick="getDirections()">
+                    <strong>Indicazioni</strong>
+                </a>
+
+                <!-- Mappa -->
+                <div id="outer-map-div">
+                    <div id="map-elem"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leaflet -->
+        <script
+            defer
+            src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        ></script>
+
+        <!-- Axios -->
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"
+            integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg=="
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Font awesome -->
+        <script
+            defer
+            src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+        ></script>
+
+        <script defer src="/js/homepage.js"></script>
+    </body>
+</html>
